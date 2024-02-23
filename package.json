@@ -1,25 +1,21 @@
 {
-  "name": "back-forwebsocket-hw",
+  "name": "chat-backend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PozhalovAlexey/back-forWebsocket-hw.git"
+    "start": "node server.js"
   },
   "author": "PozhalovAlexey",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PozhalovAlexey/back-forWebsocket-hw/issues"
+  "engines": {
+    "node": ">=16.0.0 <19.0.0"
   },
-  "homepage": "https://github.com/PozhalovAlexey/back-forWebsocket-hw#readme",
+  "type": "module",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "ws": "^8.16.0"
+    "body-parser": "1.20.2",
+    "cors": "2.8.5",
+    "express": "4.18.2",
+    "ws": "8.13.0"
   }
 }
