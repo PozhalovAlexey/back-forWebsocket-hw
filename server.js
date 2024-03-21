@@ -55,6 +55,7 @@ const server = http.createServer(app);
 const wsServer = new WebSocketServer({ server });
 wsServer.on("connection", (ws) => {
     ws.on("message", (msg, isBinary) => {
+        console.log('message')
         const receivedMSG = JSON.parse(msg);
         console.dir(receivedMSG);
         if (receivedMSG.type === "exit") {
